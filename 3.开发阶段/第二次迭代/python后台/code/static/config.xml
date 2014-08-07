@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- score_max equals to INF means infinity-->
+<community>
+	<score>
+		<level>
+			<num>1</num>
+			<min>0</min>
+			<max>100</max>
+		</level>
+		<level>
+			<num>2</num>
+			<min>101</min>
+			<max>300</max>
+		</level>
+		<level>
+			<num>3</num>
+			<min>301</min>
+			<max>800</max>
+		</level>
+		<level>
+			<num>4</num>
+			<min>801</min>
+			<max>1500</max>
+		</level>
+		<level>
+			<num>5</num>
+			<min>1501</min>
+			<max>2200</max>
+		</level>
+		<level>
+			<num>6</num>
+			<min>2201</min>
+			<max>3000</max>
+		</level>
+		<level>
+			<num>7</num>
+			<min>3001</min>
+			<max>4000</max>
+		</level>
+		<level>
+			<num>8</num>
+			<min>4001</min>
+			<max>5000</max>
+		</level>
+		<level>
+			<num>9</num>
+			<min>5001</min>
+			<max>6000</max>
+		</level>
+		<level>
+			<num>10</num>
+			<min>6001</min>
+			<max>INF</max>
+		</level>
+	</score>
+	<ops>
+		<op>
+			<cond>1</cond>
+			<score_op>5</score_op>
+			<score_max>5</score_max>
+			<desc>new user register</desc>
+		</op>
+		<op>
+			<cond>2</cond>
+			<score_op>1</score_op>
+			<score_max>1</score_max>
+			<desc>user login for the first time every day</desc>
+		</op>
+		<op>
+			<cond>3</cond>
+			<score_op>2</score_op>
+			<score_max>50</score_max>
+			<desc>user give helper credit</desc>
+		</op>
+		<op>
+			<cond>4</cond>
+			<score_op>3</score_op>
+			<score_max>INF</score_max>
+			<desc>helper join in support</desc>
+		</op>
+		<op>
+			<cond>5</cond>
+			<score_op>1</score_op>
+			<score_max>30</score_max>
+			<desc>helper send support message</desc>
+		</op>
+		<op>
+			<cond>6</cond>
+			<score_op>2</score_op>
+			<score_max>2</score_max>
+			<desc>user online for more than 12 hours in a day</desc>
+		</op>
+		<op>
+			<cond>7</cond>
+			<score_op>5</score_op>
+			<score_max>INF</score_max>
+			<desc>helper earn the highest credit in a event(allow more than one helper earn it in the same event)</desc>
+		</op>
+		<op>
+			<cond>8</cond>
+			<score_op>-10</score_op>
+			<score_max>INF</score_max>
+			<desc>send harmful support message</desc>
+		</op>
+		<op>
+			<cond>9</cond>
+			<score_op>-20</score_op>
+			<score_max>INF</score_max>
+			<desc>send useless event message</desc>
+		</op>
+		<op>
+			<cond>10</cond>
+			<score_op>-1</score_op>
+			<score_max>INF</score_max>
+			<desc>helper quit the event while the event does not end</desc>
+		</op>
+		<op>
+			<cond>11</cond>
+			<score_op>-10</score_op>
+			<score_max>INF</score_max>
+			<desc>caller give no credit to the helper after the event end for five days</desc>
+		</op>
+	</ops>
+</community>
